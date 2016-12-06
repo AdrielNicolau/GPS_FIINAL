@@ -33,14 +33,16 @@ public class MainMenuActivity extends Activity {
 
     @OnClick(R.id.bt_showTimetable)
     public void showTimetableMenu(View view) {
-        // Intent intent = new Intent(this, "poraqui o nome da activida a abrir".class);
-        //startActivity(intent);
+        Intent intent = new Intent(getApplicationContext(), TimetableActivity.class);
+        startActivity(intent);
+        Toast.makeText(getApplicationContext(), "OI", Toast.LENGTH_LONG).show();
     }
 
     @OnClick(R.id.bt_editTimetable)
     public void editTimetableMenu(View view) {
-        // Intent intent = new Intent(this, "poraqui o nome da activida a abrir".class);
-        //startActivity(intent);
+        Intent intent = new Intent(getApplicationContext(), EditTimetableActivity.class);
+        startActivity(intent);
+        Toast.makeText(getApplicationContext(), "OI", Toast.LENGTH_LONG).show();
     }
 
     @OnClick(R.id.bt_sendTimetable)

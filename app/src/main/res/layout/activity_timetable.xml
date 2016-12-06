@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="horizontal"
+              android:weightSum="1">
+
+    <ListView
+        android:id="@+id/Lv_Monday"
+        android:layout_width="76dp"
+        android:layout_height="wrap_content">
+
+
+    </ListView>
+
+    <ListView
+        android:id="@+id/Lv_Tuesday"
+        android:layout_width="76dp"
+        android:layout_height="wrap_content">
+
+
+    </ListView>
+
+    <ListView
+        android:id="@+id/Lv_Wednesday"
+        android:layout_width="76dp"
+        android:layout_height="wrap_content">
+
+
+    </ListView>
+
+    <ListView
+        android:id="@+id/Lv_Thursday"
+        android:layout_width="76dp"
+        android:layout_height="wrap_content">
+
+
+    </ListView>
+
+    <ListView
+        android:id="@+id/Lv_Friday"
+        android:layout_width="76dp"
+        android:layout_height="wrap_content">
+
+
+    </ListView>
+
+
+</LinearLayout>
+

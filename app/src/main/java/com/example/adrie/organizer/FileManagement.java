@@ -58,23 +58,40 @@ public class FileManagement {
 
         return false;
     }
+    public boolean verifyTimetableExist() {
 
+
+        FileInputStream fileInputStream;
+        try {
+            fileInputStream = mContext.openFileInput(mFileName);
+            InputStreamReader inputStreamReader = new InputStreamReader(fileInputStream);
+            BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+            String verifyProfile = bufferedReader.readLine();
+            if (verifyProfile.equals("1")) {
+                return true;
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return false;
+    }
     public Profile readFileProfile() {
 
         FileInputStream fileInputStream;
-String gg;
+
         try {
             fileInputStream = mContext.openFileInput(mFileName);
             InputStreamReader inputStreamReader = new InputStreamReader(fileInputStream);
             BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
             bufferedReader.readLine().toString();
-            Profile profile = new Profile(bufferedReader.readLine().toString(),bufferedReader.readLine().toString(),bufferedReader.readLine().toString());
+            Profile profile = new Profile(bufferedReader.readLine().toString(), bufferedReader.readLine().toString(), bufferedReader.readLine().toString());
             return profile;
         } catch (IOException e) {
             e.printStackTrace();
         }
 
-     return null;
+        return null;
     }
 }
 

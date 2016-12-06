@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_edit_timetable"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.adrie.organizer.EditTimetableActivity"
+    android:background="#F23444">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="76dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF"
+                android:layout_weight="1"
+                android:text="Monday"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:layout_width="76dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF"
+                android:layout_weight="1"
+                android:text="Tuesday"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:layout_width="76dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF"
+                android:layout_weight="1"
+                android:text="Wednesday"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:layout_width="76dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF"
+                android:layout_weight="1"
+                android:text="Thursday"
+                android:textColor="#000000"/>
+            <TextView
+                android:layout_width="76dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF"
+                android:layout_weight="1"
+                android:text="Friday"
+                android:textColor="#000000"/>
+        </TableRow>
+
+        Read more: http://mrbool.com/how-to-deal-with-table-layout-in-android/28008#ixzz4S1oWP7Vi
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ListView
+            android:id="@+id/Lv_Monday"
+            android:layout_marginRight="1dp"
+            android:layout_width="76dp"
+            android:layout_height="wrap_content">
+
+
+        </ListView>
+
+        <ListView
+            android:id="@+id/Lv_Tuesday"
+            android:layout_marginRight="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_width="76dp"
+            android:layout_height="wrap_content">
+
+
+        </ListView>
+
+        <ListView
+            android:id="@+id/Lv_Wednesday"
+            android:layout_marginRight="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_width="76dp"
+            android:layout_height="wrap_content">
+
+
+        </ListView>
+
+        <ListView
+            android:id="@+id/Lv_Thursday"
+            android:layout_marginRight="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_width="76dp"
+            android:layout_height="wrap_content">
+
+
+        </ListView>
+
+        <ListView
+            android:id="@+id/Lv_Friday"
+            android:layout_marginLeft="1dp"
+            android:layout_width="76dp"
+            android:layout_height="wrap_content">
+
+
+        </ListView>
+    </LinearLayout>
+</LinearLayout>
